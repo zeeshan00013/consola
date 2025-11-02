@@ -2,17 +2,18 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Menu, X, Phone, Mail, MapPin, Heart } from "lucide-react";
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
+    { name: "Home", href: "/" },
     { name: "About", href: "#about" },
-    { name: "Team", href: "#team" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" },
+
+    { name: "Services", href: "/services" },
+    { name: "Team", href: "/team" },
+    { name: "Contact", href: "/contact-us" },
   ];
 
   return (
@@ -55,7 +56,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item, index) => (
-              <motion.a
+              <Link
                 key={item.name}
                 href={item.href}
                 initial={{ opacity: 0, y: -20 }}
@@ -65,7 +66,7 @@ const Header = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 {item.name}
-              </motion.a>
+              </Link>
             ))}
           </nav>
 

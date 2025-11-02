@@ -12,16 +12,7 @@ import {
 } from "lucide-react";
 
 const Footer = () => {
-  const quickLinks = [
-    "About Us",
-    "Our Services",
-    "Our Team",
-    "Patient Portal",
-    "Insurance",
-    "Careers",
-    "News & Updates",
-    "Contact Us",
-  ];
+  const quickLinks = ["About Us", "Our Services", "Our Team", "Contact Us"];
 
   const services = [
     "Cardiology",
@@ -56,8 +47,8 @@ const Footer = () => {
             <div className="flex items-center">
               <Heart className="w-8 h-8 text-emerald-400 mr-3" />
               <div>
-                <h3 className="text-2xl font-bold">MediWell</h3>
-                <p className="text-emerald-400">Wellness Clinic</p>
+                <h3 className="text-2xl font-bold">Consola</h3>
+                <p className="text-emerald-400">Mental Health </p>
               </div>
             </div>
 
