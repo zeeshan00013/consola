@@ -1,17 +1,17 @@
 import About from "./components/About.jsx";
-import Appointment from "./components/Appointment.jsx";
-import Hero from "./components/Hero.jsx";
-import Services from "./components/Services.jsx";
+import HomePage from "./components/Home.jsx";
+import Service from "./components/Services.jsx";
 import Testimonials from "./components/Testimonials.jsx";
+import WhyChooseUs from "./components/WhyChooseUs.jsx";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <Hero />
-      <Services />
+    <div className="min-h-screen bg-white sticky">
+      <HomePage />
       <About />
+      <Service />
+      <WhyChooseUs />
       <Testimonials />
-      <Appointment />
     </div>
   );
 }

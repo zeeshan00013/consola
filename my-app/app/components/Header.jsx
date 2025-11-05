@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       {/* Top Bar */}
-      <div className="bg-emerald-600 text-white py-2 px-4">
+      <div className="bg-[#4e7e50] text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
             <div className="flex items-center">
@@ -46,34 +46,37 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center"
           >
-            <Heart className="w-8 h-8 text-emerald-600 mr-3" />
+            <Heart className="w-8 h-8 text-green-700 mr-3" />
             <div>
               <h1 className="text-2xl font-bold text-gray-900">Consola</h1>
-              <p className="text-sm text-emerald-600">Mental Health</p>
+              <p className="text-sm text-green-700">Mental Health</p>
             </div>
           </motion.div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item, index) => (
-              <Link
+              <motion.div
                 key={item.name}
-                href={item.href}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-300"
                 whileHover={{ scale: 1.05 }}
               >
-                {item.name}
-              </Link>
+                <Link
+                  href={item.href}
+                  className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-300"
+                >
+                  {item.name}
+                </Link>
+              </motion.div>
             ))}
           </nav>
 
           <motion.button
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="hidden md:block bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300"
+            className="hidden md:block bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -97,17 +100,23 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden py-4 border-t"
           >
-            {navItems.map((item) => (
-              <a
+            {navItems.map((item, index) => (
+              <motion.div
                 key={item.name}
-                href={item.href}
-                className="block py-2 text-gray-700 hover:text-emerald-600 font-medium"
-                onClick={() => setIsOpen(false)}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ scale: 1.05 }}
               >
-                {item.name}
-              </a>
+                <Link
+                  href={item.href}
+                  className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-300"
+                >
+                  {item.name}
+                </Link>
+              </motion.div>
             ))}
-            <button className="w-full mt-4 bg-emerald-600 text-white py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300">
+            <button className="w-full mt-4 bg-green-700 text-white py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300">
               Book Appointment
             </button>
           </motion.nav>

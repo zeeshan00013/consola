@@ -8,36 +8,13 @@ import img3 from "../Images/mental3.jpg";
 import img4 from "../Images/mental4.jpg";
 
 const About = () => {
-  const features = [
-    {
-      icon: Award,
-      title: "Excellence in Care",
-      description:
-        "Award-winning healthcare with nationally recognized quality standards.",
-    },
-    {
-      icon: Users,
-      title: "Expert Team",
-      description:
-        "Board-certified physicians with years of specialized experience.",
-    },
-    {
-      icon: Clock,
-      title: "24/7 Available",
-      description: "Round-the-clock emergency services and patient support.",
-    },
-    {
-      icon: Shield,
-      title: "Safe & Secure",
-      description:
-        "State-of-the-art facilities with the highest safety protocols.",
-    },
-  ];
-
   return (
     <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
+          About <span className="text-gradient">Consola</span> Mental Health
+        </h2>
+        <div className="grid lg:grid-cols-2 gap-12 items-center mt-20">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -46,10 +23,6 @@ const About = () => {
             className="space-y-8"
           >
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                About <span className="text-gradient">Consola</span> Mental
-                Health
-              </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 At Consola Mental Health, we believe that your mental well-being
                 is just as important as your physical health. Our mission is to
@@ -65,32 +38,6 @@ const About = () => {
                 strategies needed to regain control of your life and emotional
                 health.
               </p>
-            </div>
-
-            <div className="grid grid-cols-2 gap-6">
-              {features.map((feature, index) => {
-                const Icon = feature.icon;
-                return (
-                  <motion.div
-                    key={feature.title}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="space-y-3"
-                  >
-                    <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-emerald-600" />
-                    </div>
-                    <h3 className="font-semibold text-gray-900">
-                      {feature.title}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      {feature.description}
-                    </p>
-                  </motion.div>
-                );
-              })}
             </div>
 
             <motion.button

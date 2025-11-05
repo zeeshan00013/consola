@@ -10,19 +10,22 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
-  const quickLinks = ["About Us", "Our Services", "Our Team", "Contact Us"];
+  const quickLinks = [
+    { name: "About Us", href: "/about-us" },
+    { name: "Our Services", href: "/services" },
+    { name: "Our Team", href: "/team" },
+    { name: "Contact Us", href: "/contact-us" },
+  ];
 
   const services = [
-    "Cardiology",
-    "Neurology",
-    "Pediatrics",
-    "Orthopedics",
-    "Ophthalmology",
-    "Emergency Care",
-    "General Medicine",
-    "Pharmacy",
+    { name: "Individual Therapy", href: "/services" },
+    { name: "Couples Counseling", href: "/services" },
+    { name: "Family Therapy", href: "/services" },
+    { name: "Online Counseling", href: "/services" },
+    { name: "Depression Treatment", href: "/services" },
   ];
 
   const socialLinks = [
@@ -45,10 +48,10 @@ const Footer = () => {
             className="space-y-6"
           >
             <div className="flex items-center">
-              <Heart className="w-8 h-8 text-emerald-400 mr-3" />
+              <Heart className="w-8 h-8 text-green-400 mr-3" />
               <div>
                 <h3 className="text-2xl font-bold">Consola</h3>
-                <p className="text-emerald-400">Mental Health </p>
+                <p className="text-green-400">Mental Health</p>
               </div>
             </div>
 
@@ -59,15 +62,15 @@ const Footer = () => {
 
             <div className="space-y-3">
               <div className="flex items-center">
-                <Phone className="w-5 h-5 text-emerald-400 mr-3" />
+                <Phone className="w-5 h-5 text-green-400 mr-3" />
                 <span className="text-gray-300">(555) 123-4567</span>
               </div>
               <div className="flex items-center">
-                <Mail className="w-5 h-5 text-emerald-400 mr-3" />
+                <Mail className="w-5 h-5 text-green-400 mr-3" />
                 <span className="text-gray-300">info@mediwellclinic.com</span>
               </div>
               <div className="flex items-center">
-                <MapPin className="w-5 h-5 text-emerald-400 mr-3" />
+                <MapPin className="w-5 h-5 text-green-400 mr-3" />
                 <span className="text-gray-300">
                   123 Healthcare Ave, Medical District
                 </span>
@@ -86,13 +89,13 @@ const Footer = () => {
             <h3 className="text-xl font-bold">Quick Links</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:text-emerald-400 transition-colors duration-300"
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-300 hover:text-green-400 transition-colors duration-300"
                   >
-                    {link}
-                  </a>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -109,13 +112,13 @@ const Footer = () => {
             <h3 className="text-xl font-bold">Our Services</h3>
             <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service}>
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:text-emerald-400 transition-colors duration-300"
+                <li key={service.name}>
+                  <Link
+                    href={service.href}
+                    className="text-gray-300 hover:text-green-400 transition-colors duration-300"
                   >
-                    {service}
-                  </a>
+                    {service.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -133,7 +136,7 @@ const Footer = () => {
 
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-emerald-400 mb-2">
+                <h4 className="font-semibold text-green-400 mb-2">
                   Office Hours
                 </h4>
                 <div className="text-gray-300 space-y-1">
@@ -144,16 +147,14 @@ const Footer = () => {
               </div>
 
               <div>
-                <h4 className="font-semibold text-emerald-400 mb-2">
-                  Emergency
-                </h4>
+                <h4 className="font-semibold text-green-400 mb-2">Emergency</h4>
                 <p className="text-gray-300">24/7 Emergency Services</p>
                 <p className="text-gray-300">(555) 911-HELP</p>
               </div>
             </div>
 
             <div className="flex space-x-4">
-              {socialLinks.map((social, index) => {
+              {socialLinks.map((social) => {
                 const Icon = social.icon;
                 return (
                   <motion.a
@@ -161,7 +162,7 @@ const Footer = () => {
                     href={social.href}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center hover:bg-emerald-500 transition-colors duration-300"
+                    className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors duration-300"
                     aria-label={social.label}
                   >
                     <Icon className="w-5 h-5" />
@@ -181,12 +182,12 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-center md:text-left">
-              © 2024 MediWell Clinic. All rights reserved. |
-              <a href="#" className="hover:text-emerald-400 ml-1">
+              © 2024 Consola Mental Health. All rights reserved. |
+              <a href="#" className="hover:text-green-400 ml-1">
                 Privacy Policy
               </a>{" "}
               |
-              <a href="#" className="hover:text-emerald-400 ml-1">
+              <a href="#" className="hover:text-green-400 ml-1">
                 Terms of Service
               </a>
             </p>

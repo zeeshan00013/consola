@@ -17,25 +17,25 @@ const Contact = () => {
       icon: Phone,
       title: "Phone",
       details: ["Main: (555) 123-4567", "Emergency: (555) 911-HELP"],
-      color: "text-emerald-600",
+      color: "text-green-700",
     },
     {
       icon: Mail,
       title: "Email",
       details: ["info@mediwellclinic.com", "appointments@mediwellclinic.com"],
-      color: "text-emerald-600",
+      color: "text-green-700",
     },
     {
       icon: MapPin,
       title: "Address",
       details: ["123 Healthcare Avenue", "Medical District, MD 12345"],
-      color: "text-emerald-600",
+      color: "text-green-700",
     },
     {
       icon: Clock,
       title: "Hours",
       details: ["Mon-Fri: 7:00 AM - 8:00 PM", "Weekend: 8:00 AM - 6:00 PM"],
-      color: "text-emerald-600",
+      color: "text-green-700",
     },
   ];
 
@@ -120,7 +120,7 @@ const Contact = () => {
                       key={facility.title}
                       className="flex items-center space-x-3"
                     >
-                      <Icon className="w-5 h-5 text-emerald-600" />
+                      <Icon className="w-5 h-5 text-green-700" />
                       <div>
                         <div className="font-medium text-gray-900 text-sm">
                           {facility.title}
@@ -165,7 +165,7 @@ const Contact = () => {
             {/* Map Placeholder */}
             <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center medical-shadow">
               <div className="text-center">
-                <MapPin className="w-16 h-16 text-emerald-600 mx-auto mb-4" />
+                <MapPin className="w-16 h-16 text-green-700 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Interactive Map
                 </h3>
