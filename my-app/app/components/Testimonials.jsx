@@ -4,7 +4,7 @@ import googleLogo from "../Images/google.png";
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#4e7e50] py-16 mb-10 h-[600px] flex items-center justify-center">
+    <section className="bg-[#4e7e50] py-16 mb-10 md:h-[600px] flex items-center justify-center">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-3 gap-10 items-center">
         {/* Left Text Section */}
         <div className="lg:col-span-1 text-white space-y-3">
