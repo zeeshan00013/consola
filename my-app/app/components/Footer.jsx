@@ -59,23 +59,6 @@ const Footer = () => {
               Providing exceptional healthcare services for over 25 years. Your
               health and well-being are our top priorities.
             </p>
-
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <Phone className="w-5 h-5 text-green-400 mr-3" />
-                <span className="text-gray-300">(555) 123-4567</span>
-              </div>
-              <div className="flex items-center">
-                <Mail className="w-5 h-5 text-green-400 mr-3" />
-                <span className="text-gray-300">info@mediwellclinic.com</span>
-              </div>
-              <div className="flex items-center">
-                <MapPin className="w-5 h-5 text-green-400 mr-3" />
-                <span className="text-gray-300">
-                  123 Healthcare Ave, Medical District
-                </span>
-              </div>
-            </div>
           </motion.div>
 
           {/* Quick Links */}
@@ -133,26 +116,22 @@ const Footer = () => {
             className="space-y-6"
           >
             <h3 className="text-xl font-bold">Connect With Us</h3>
-
-            <div className="space-y-4">
-              <div>
-                <h4 className="font-semibold text-green-400 mb-2">
-                  Office Hours
-                </h4>
-                <div className="text-gray-300 space-y-1">
-                  <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
-                  <p>Saturday: 8:00 AM - 6:00 PM</p>
-                  <p>Sunday: 8:00 AM - 4:00 PM</p>
-                </div>
+            <div className="space-y-3">
+              <div className="flex items-center">
+                <Phone className="w-5 h-5 text-green-400 mr-3" />
+                <span className="text-gray-300">443 739 5882</span>
               </div>
-
-              <div>
-                <h4 className="font-semibold text-green-400 mb-2">Emergency</h4>
-                <p className="text-gray-300">24/7 Emergency Services</p>
-                <p className="text-gray-300">(555) 911-HELP</p>
+              <div className="flex items-center">
+                <Mail className="w-5 h-5 text-green-400 mr-3" />
+                <span className="text-gray-300">info@mediwellclinic.com</span>
+              </div>
+              <div className="flex items-center">
+                <MapPin className="w-5 h-5 text-green-400 mr-3" />
+                <span className="text-gray-300">
+                  9331 Liberty Rd Randallstown Md 21133
+                </span>
               </div>
             </div>
-
             <div className="flex space-x-4">
               {socialLinks.map((social) => {
                 const Icon = social.icon;

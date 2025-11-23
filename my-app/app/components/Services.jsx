@@ -2,15 +2,15 @@
 import Image from "next/image";
 
 import individual from "../Images/individual.jpg";
-import family from "../Images/family.jpg";
-import couple from "../Images/couple.jpg";
+import family from "../Images/bipolar.jpg";
+import couple from "../Images/sleepdisorder.jpg";
 import medication from "../Images/medication.jpg";
 import Link from "next/link";
 
 const Services = [
   { img: individual, title: "Individual Therapy" },
-  { img: family, title: "Family Therapy" },
-  { img: couple, title: "Couples Counseling" },
+  { img: family, title: "Bipolar Disorder" },
+  { img: couple, title: "Sleep Disorder" },
   { img: medication, title: " Medication Management" },
 ];
 

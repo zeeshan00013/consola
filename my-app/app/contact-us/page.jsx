@@ -16,7 +16,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["Main: (555) 123-4567", "Emergency: (555) 911-HELP"],
+      details: ["Main: 443 739 5882 "],
       color: "text-emerald-600",
     },
     {
@@ -28,7 +28,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      details: ["123 Healthcare Avenue", "Medical District, MD 12345"],
+      details: ["9331 Liberty Rd Randallstown Md 21133"],
       color: "text-emerald-600",
     },
     {

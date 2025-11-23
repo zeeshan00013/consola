@@ -2,24 +2,24 @@
 import { motion } from "framer-motion";
 
 import individual from "../Images/individual.jpg";
-import family from "../Images/family.jpg";
-import couple from "../Images/couple.jpg";
+import family from "../Images/sleepdisorder.jpg";
+import couple from "../Images/bipolar.jpg";
 import medication from "../Images/medication.jpg";
 import depress from "../Images/depressed.jpg";
-import child from "../Images/child.jpg";
-import online from "../Images/online.jpg";
+import child from "../Images/hyperactivity.jpg";
+import online from "../Images/Schizophrenia.jpg";
 import stress from "../Images/stress.jpg";
 import Image from "next/image";
 
 const Services = () => {
   const Services = [
     { img: individual, title: "Individual Therapy" },
-    { img: family, title: "Family Therapy" },
-    { img: couple, title: "Couples Counseling" },
+    { img: family, title: "Sleep Disorder" },
+    { img: couple, title: "Bipolar Disorder" },
     { img: medication, title: " Medication Management" },
     { img: depress, title: "depressed" },
-    { img: child, title: " Child & Adolescent Therapy" },
-    { img: online, title: "Online Counselling" },
+    { img: child, title: " Attention hyperactivity disorder" },
+    { img: online, title: "Schizophrenia" },
     { img: stress, title: "Stress & anxity" },
   ];
 
