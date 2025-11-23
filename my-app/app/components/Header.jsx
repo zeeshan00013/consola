@@ -33,7 +33,7 @@ const Header = () => {
           </div>
           <div className="flex items-center">
             <MapPin className="w-4 h-4 mr-2" />
-            <span>123 Healthcare Ave, Medical District</span>
+            <span>9331 Liberty Rd Randallstown Md 21133</span>
           </div>
         </div>
       </div>
