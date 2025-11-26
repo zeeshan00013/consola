@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { HeartPulse, Eye, Target } from "lucide-react";
-import familyImg from "../Images/why.jpg";
+import familyImg from "../Images/whyyyy.webp";
 
 export default function WhyChooseUs() {
   return (

@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 // ✅ Import images from public (or /app/assets if you prefer)
-import family1 from "../Images/home1.jpg";
-import family2 from "../Images/home3.webp";
-import family3 from "../Images/home2.jpg";
+import family1 from "../Images/psychtry.jpg";
+import family2 from "../Images/psychtry.jpg";
+import family3 from "../Images/psychtry.jpg";
 
 export default function HomePage() {
   const images = [family1, family2, family3];
@@ -39,7 +39,7 @@ export default function HomePage() {
       ))}
 
       {/* Overlay Text */}
-      <div className="absolute inset-0 flex flex-col justify-center items-start px-8 sm:px-16 md:px-24 text-white">
+      <div className="absolute inset-0 flex flex-col justify-center items-start px-8 sm:px-16  text-white max-w-7xl w-full mx-auto">
         <p className="text-lg mb-2 bg-green-700 px-3 py-1 rounded-md">
           Welcome to Consola Mental Health
         </p>

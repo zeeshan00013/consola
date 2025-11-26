@@ -171,11 +171,14 @@ const Footer = () => {
             </p>
 
             <div className="flex items-center space-x-4 text-sm text-gray-400">
-              <span>Licensed Healthcare Provider</span>
-              <div className="w-px h-4 bg-gray-600"></div>
-              <span>HIPAA Compliant</span>
-              <div className="w-px h-4 bg-gray-600"></div>
-              <span>Accredited Facility</span>
+              <Link
+                href="https://rcmexpertc.com"
+                target="_blank"
+                className="hover:text-white transition"
+              >
+                designed by{" "}
+                <span className="text-green-400">RCM Expert Consultants</span>
+              </Link>
             </div>
           </div>
         </motion.div>
