@@ -1,17 +1,15 @@
 "use client";
 import Image from "next/image";
 
-import individual from "../Images/individual.jpg";
+import individual from "../Images/depressed.jpg";
 import family from "../Images/bipolar.jpg";
-import couple from "../Images/sleepdisorder.jpg";
-import medication from "../Images/medication.jpg";
+import medication from "../Images/Schizophrenia.jpg";
 import Link from "next/link";
 
 const Services = [
-  { img: individual, title: "Individual Therapy" },
+  { img: individual, title: "depression" },
   { img: family, title: "Bipolar Disorder" },
-  { img: couple, title: "Sleep Disorder" },
-  { img: medication, title: " Medication Management" },
+  { img: medication, title: " Schizophrenia" },
 ];
 
 export default function Service() {
@@ -26,7 +24,7 @@ export default function Service() {
         to:
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 justify-items-center px-6">
         {Services.map((item, index) => (
           <div
             key={index}

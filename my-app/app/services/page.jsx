@@ -13,12 +13,9 @@ import Image from "next/image";
 
 const Services = () => {
   const Services = [
-    { img: individual, title: "Individual Therapy" },
-    { img: family, title: "Sleep Disorder" },
     { img: couple, title: "Bipolar Disorder" },
-    { img: medication, title: " Medication Management" },
-    { img: depress, title: "depressed" },
-    { img: child, title: " Attention hyperactivity disorder" },
+    { img: medication, title: " ADHD" },
+    { img: depress, title: "depression" },
     { img: online, title: "Schizophrenia" },
     { img: stress, title: "Stress & anxity" },
   ];

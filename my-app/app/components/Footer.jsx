@@ -21,11 +21,10 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: "Individual Therapy", href: "/services" },
-    { name: "Couples Counseling", href: "/services" },
-    { name: "Family Therapy", href: "/services" },
-    { name: "Online Counseling", href: "/services" },
-    { name: "Depression Treatment", href: "/services" },
+    { name: "Depression", href: "/services" },
+    { name: "Schizophrenia", href: "/services" },
+    { name: "Stress & anxity", href: "/services" },
+    { name: "Bipolar Disorder", href: "/services" },
   ];
 
   const socialLinks = [

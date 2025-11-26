@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { Award, Users, Clock, Shield } from "lucide-react";
 import Image from "next/image";
-import img1 from "../Images/mental1.jpg";
+import img1 from "../Images/stressandanxity.jpg";
 import img2 from "../Images/mental2.jpg";
 import img3 from "../Images/mental3.jpg";
 import img4 from "../Images/mental4.jpg";
@@ -59,16 +59,16 @@ const About = () => {
             <div className="space-y-4">
               <Image
                 src={img1}
-                alt="Medical facility"
-                width={50}
-                height={50}
+                alt="Healthcare team"
+                width={500}
+                height={300}
                 className="rounded-2xl w-full h-48 object-cover medical-shadow"
               />
               <Image
                 src={img2}
                 alt="Healthcare team"
-                height={50}
-                weight={50}
+                width={500}
+                height={300}
                 className="rounded-2xl w-full h-32 object-cover medical-shadow"
               />
             </div>
@@ -76,16 +76,16 @@ const About = () => {
               <Image
                 src={img3}
                 alt="Medical equipment"
-                width={100}
-                height={100}
-                className="rounded-2xl w-full h-32 object-cover "
+                width={500}
+                height={300}
+                className="rounded-2xl w-full h-32 object-cover medical-shadow"
               />
               <Image
                 src={img4}
                 alt="Patient care"
-                width={50}
-                height={50}
-                className="rounded-2xl w-full h-48 object-cover medical-shadow"
+                width={500}
+                height={300}
+                className="rounded-2xl w-full h-42 object-cover medical-shadow"
               />
             </div>
           </motion.div>
