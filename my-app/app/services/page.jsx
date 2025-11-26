@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import individual from "../Images/individual.jpg";
 import family from "../Images/sleepdisorder.jpg";
 import couple from "../Images/bipolar.jpg";
-import medication from "../Images/medication.jpg";
+import medication from "../Images/hyperactivity.jpg";
 import depress from "../Images/depressed.jpg";
 import child from "../Images/hyperactivity.jpg";
 import online from "../Images/Schizophrenia.jpg";
@@ -15,7 +15,7 @@ const Services = () => {
   const Services = [
     { img: couple, title: "Bipolar Disorder" },
     { img: medication, title: " ADHD" },
-    { img: depress, title: "depression" },
+    { img: depress, title: "Depression" },
     { img: online, title: "Schizophrenia" },
     { img: stress, title: "Stress & anxity" },
   ];
