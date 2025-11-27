@@ -1,23 +1,28 @@
 "use client";
-import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
-import individual from "../Images/individual.jpg";
-import family from "../Images/sleepdisorder.jpg";
 import couple from "../Images/bipolar.jpg";
 import medication from "../Images/hyperactivity.jpg";
 import depress from "../Images/depressed.jpg";
-import child from "../Images/hyperactivity.jpg";
 import online from "../Images/Schizophrenia.jpg";
 import stress from "../Images/stress.jpg";
-import Image from "next/image";
 
 const Services = () => {
   const Services = [
-    { img: couple, title: "Bipolar Disorder" },
-    { img: medication, title: " ADHD" },
-    { img: depress, title: "Depression" },
-    { img: online, title: "Schizophrenia" },
-    { img: stress, title: "Stress & anxity" },
+    {
+      img: couple,
+      title: "Bipolar Disorder",
+      route: "/bipolar-disorder",
+    },
+    { img: medication, title: "ADHD", route: "/ADHD" },
+    { img: depress, title: "Depression", route: "/depression" },
+    { img: online, title: "Schizophrenia", route: "/schizophrenia" },
+    {
+      img: stress,
+      title: "Stress & Anxiety",
+      route: "/stress-anxiety",
+    },
   ];
 
   return (
@@ -35,7 +40,8 @@ const Services = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center px-6">
           {Services.map((item, index) => (
-            <div
+            <Link
+              href={item.route}
               key={index}
               className="bg-white border border-green-700 rounded-md shadow-sm hover:shadow-lg transition-all duration-300 w-full max-w-[250px] overflow-hidden"
             >
@@ -52,7 +58,7 @@ const Services = () => {
                   {item.title}
                 </h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

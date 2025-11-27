@@ -1,15 +1,15 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 import individual from "../Images/depressed.jpg";
 import family from "../Images/bipolar.jpg";
 import medication from "../Images/Schizophrenia.jpg";
-import Link from "next/link";
 
 const Services = [
-  { img: individual, title: "depression" },
-  { img: family, title: "Bipolar Disorder" },
-  { img: medication, title: " Schizophrenia" },
+  { img: individual, title: "Depression", route: "/depression" },
+  { img: family, title: "Bipolar Disorder", route: "/bipolar-disorder" },
+  { img: medication, title: "Schizophrenia", route: "/schizophrenia" },
 ];
 
 export default function Service() {
@@ -24,9 +24,10 @@ export default function Service() {
         to:
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 justify-items-center px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center px-6">
         {Services.map((item, index) => (
-          <div
+          <Link
+            href={item.route}
             key={index}
             className="bg-white border border-green-700 rounded-md shadow-sm hover:shadow-lg transition-all duration-300 w-full max-w-[250px] overflow-hidden"
           >
@@ -43,12 +44,13 @@ export default function Service() {
                 {item.title}
               </h3>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
+
       <div className="mt-10">
         <Link href={"/services"}>
-          <button className="bg-green-700 rounded-xl px-3 py-3 text-white cursor-pointer">
+          <button className="bg-[#376941] rounded-xl px-3 py-3 text-white cursor-pointer">
             View More Services
           </button>
         </Link>

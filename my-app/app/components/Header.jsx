@@ -76,7 +76,7 @@ const Header = () => {
           <motion.button
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="hidden md:block bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300"
+            className="hidden md:block bg-[#376941] text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -116,7 +116,7 @@ const Header = () => {
                 </Link>
               </motion.div>
             ))}
-            <button className="w-full mt-4 bg-green-700 text-white py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300">
+            <button className="w-full mt-4 bg-[#376941] text-white py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300">
               Book Appointment
             </button>
           </motion.nav>

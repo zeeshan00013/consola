@@ -154,7 +154,7 @@ const About = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-green-600 text-white py-12 px-6 text-center">
+      <div className="bg-[#7E9075] text-white py-12 px-6 text-center">
         <h2 className="text-3xl font-semibold mb-4">
           Let’s Start Your Healing Journey Today
         </h2>

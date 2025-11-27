@@ -21,10 +21,10 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: "Depression", href: "/services" },
-    { name: "Schizophrenia", href: "/services" },
-    { name: "Stress & anxity", href: "/services" },
-    { name: "Bipolar Disorder", href: "/services" },
+    { name: "Depression", href: "/depression" },
+    { name: "Schizophrenia", href: "/schizophrenia" },
+    { name: "Stress & anxity", href: "/stress-anxiety" },
+    { name: "Bipolar Disorder", href: "/bipolar-disorder" },
   ];
 
   const socialLinks = [

@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
               priority
             />
           </div>
-          <div className="absolute bottom-0 left-0 w-full bg-green-700 text-white text-center py-6 rounded-b-2xl">
+          <div className="absolute bottom-0 left-0 w-full bg-[#376941] text-white text-center py-6 rounded-b-2xl">
             <h2 className="text-4xl font-bold">09</h2>
             <p className="mt-2 text-sm px-4">
               Consola Mental Health has 9 years of professional experience

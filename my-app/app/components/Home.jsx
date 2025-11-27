@@ -40,13 +40,13 @@ export default function HomePage() {
 
       {/* Overlay Text */}
       <div className="absolute inset-0 flex flex-col justify-center items-start px-8 sm:px-16  text-white max-w-7xl w-full mx-auto">
-        <p className="text-lg mb-2 bg-green-700 px-3 py-1 rounded-md">
+        <p className="text-lg mb-2 bg-[#376941] px-3 py-1 rounded-md">
           Welcome to Consola Mental Health
         </p>
         <h1 className="text-5xl sm:text-6xl  font-bold leading-snug">
           Your Loved One&apos;s <br /> Care Is <br /> Our Priority
         </h1>
-        <button className="mt-4 bg-green-700 hover:bg-green-800 transition-all px-5 py-2 rounded-lg text-lg">
+        <button className="mt-4 bg-[#376941] hover:bg-green-800 transition-all px-5 py-2 rounded-lg text-lg">
           Book Appointment
         </button>
       </div>
