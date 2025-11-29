@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import img from "../Images/GettyImages-1271550771.webp";
-import img2 from "../Images/stress.jpg";
+import img from "../serviceImages/stress-1.jpg";
+import img2 from "../serviceImages/stress-2.jpg";
 import { useState } from "react";
 
 export default function Home() {

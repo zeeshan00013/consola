@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import img from "../Images/GettyImages-1271550771.webp";
+import img from "../serviceImages/bipolar-1.jpeg";
 import { useState } from "react";
-import bipolar from "../Images/bipolar.jpg";
+import bipolar from "..//serviceImages/bipolar-2.webp";
 
 export default function Home() {
   const faqs = [

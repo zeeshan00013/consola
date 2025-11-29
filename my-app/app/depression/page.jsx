@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import img from "../Images/GettyImages-1271550771.webp";
+import img from "../serviceImages/depression-1.jpeg";
 import { useState } from "react";
-import depress from "../Images/depressed.jpg";
+import depress from "../serviceImages/depression-2.jpg";
 
 export default function Home() {
   const faqs = [

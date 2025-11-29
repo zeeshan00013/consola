@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import img from "../Images/GettyImages-1271550771.webp";
+import img from "../serviceImages/schi-1.jpg";
 import { useState } from "react";
-import online from "../Images/Schizophrenia.jpg";
+import online from "../serviceImages/schi-2.jpg";
 
 export default function Home() {
   const faqs = [
