@@ -4,8 +4,8 @@ import Image from "next/image";
 
 // ✅ Import images from public (or /app/assets if you prefer)
 import family1 from "../Images/psychtry.jpg";
-import family2 from "../Images/psychtry.jpg";
-import family3 from "../Images/psychtry.jpg";
+import family2 from "../Images/psy-hero.jpg";
+import family3 from "../Images/psy-hero-2.jpg";
 
 export default function HomePage() {
   const images = [family1, family2, family3];
