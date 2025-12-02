@@ -10,13 +10,14 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import logo from "../Images/footer-logo.png";
 
 const Footer = () => {
   const quickLinks = [
     { name: "About Us", href: "/about-us" },
     { name: "Our Services", href: "/services" },
-    { name: "Our Team", href: "/team" },
     { name: "Contact Us", href: "/contact-us" },
   ];
 
@@ -25,6 +26,7 @@ const Footer = () => {
     { name: "Schizophrenia", href: "/schizophrenia" },
     { name: "Stress & anxity", href: "/stress-anxiety" },
     { name: "Bipolar Disorder", href: "/bipolar-disorder" },
+    { name: "ADHD", href: "/ADHD" },
   ];
 
   const socialLinks = [
@@ -47,10 +49,13 @@ const Footer = () => {
             className="space-y-6"
           >
             <div className="flex items-center">
-              <Heart className="w-8 h-8 text-green-400 mr-3" />
               <div>
-                <h3 className="text-2xl font-bold">Consola</h3>
-                <p className="text-green-400">Mental Health</p>
+                <Image
+                  src={logo}
+                  alt="consola mental health "
+                  width={100}
+                  height={100}
+                />
               </div>
             </div>
 
@@ -122,7 +127,9 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-green-400 mr-3" />
-                <span className="text-gray-300">info@mediwellclinic.com</span>
+                <span className="text-gray-300">
+                  info@consolamentalhealth.com
+                </span>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-green-400 mr-3" />

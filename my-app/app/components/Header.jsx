@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Menu, X, Phone, Mail, MapPin, Heart } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../Images/Logo Consola.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +14,6 @@ const Header = () => {
     { name: "About", href: "/about-us" },
 
     { name: "Services", href: "/services" },
-    { name: "Team", href: "/team" },
     { name: "Contact", href: "/contact-us" },
   ];
 
@@ -28,7 +29,7 @@ const Header = () => {
             </div>
             <div className="flex items-center">
               <Mail className="w-4 h-4 mr-2" />
-              <span>info@xxxxxxxx.com</span>
+              <span>info@consolamentalhealth.com</span>
             </div>
           </div>
           <div className="flex items-center">
@@ -46,10 +47,13 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center"
           >
-            <Heart className="w-8 h-8 text-green-700 mr-3" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Consola</h1>
-              <p className="text-sm text-green-700">Mental Health</p>
+              <Image
+                src={logo}
+                alt="consola mental health "
+                width={70}
+                height={100}
+              />
             </div>
           </motion.div>
 

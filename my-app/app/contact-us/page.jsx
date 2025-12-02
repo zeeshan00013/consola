@@ -22,7 +22,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["info@mediwellclinic.com", "appointments@mediwellclinic.com"],
+      details: [" info@consolamentalhealth.com"],
       color: "text-emerald-600",
     },
     {
