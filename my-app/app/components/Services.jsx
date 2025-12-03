@@ -5,11 +5,26 @@ import Link from "next/link";
 import individual from "../Images/depressed.jpg";
 import family from "../Images/bipolar.jpg";
 import medication from "../Images/Schizophrenia.jpg";
+import adhd from "../Images/hyperactivity.jpg";
+import anxiety from "../Images/stress.jpg";
 
 const Services = [
   { img: individual, title: "Depression", route: "/depression" },
   { img: family, title: "Bipolar Disorder", route: "/bipolar-disorder" },
   { img: medication, title: "Schizophrenia", route: "/schizophrenia" },
+  { img: anxiety, title: "Anxiety", route: "/stress-anxiety" },
+  {
+    img: adhd,
+    title: "Attention deficit hyperactivity disorder (ADHD)",
+    route: "/ADHD",
+  },
+  {
+    img: medication,
+    title: "Post Traumatic Stress Disorder (PTSD)",
+    route: "/ADHD",
+  },
+  { img: family, title: "Obsessive Compulsive Disorder (OCD)", route: "/ADHD" },
+  { img: family, title: "Psychosis", route: "/ADHD" },
 ];
 
 export default function Service() {
@@ -24,7 +39,7 @@ export default function Service() {
         to:
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center px-6">
         {Services.map((item, index) => (
           <Link
             href={item.route}

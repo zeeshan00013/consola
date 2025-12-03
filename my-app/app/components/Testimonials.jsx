@@ -7,11 +7,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      text: "Consola Mental Health has truly changed my life. The therapists are compassionate, understanding, and incredibly skilled at what they do. I’ve gained confidence and coping strategies that have made a real difference in my daily life. Highly recommend!",
+      text: "Consola Mental Health has truly changed my life. They are compassionate, understanding, and incredibly skilled at what they do. I’ve gained confidence and coping strategies that have made a real difference in my daily life. Highly recommend!",
       name: "Emily R.",
     },
     {
-      text: "From the moment I reached out, I felt heard and supported. The team at Consola Mental Health made the process so easy, and my therapist has been a guiding light in my healing journey. I finally feel like I’m on the right path.",
+      text: "From the moment I reached out, I felt heard and supported. The team at Consola Mental Health made the process so easy, and my provider has been a guiding light in my healing journey. I finally feel like I’m on the right path.",
       name: "James L.",
     },
     {

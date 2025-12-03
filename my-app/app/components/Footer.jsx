@@ -18,6 +18,8 @@ const Footer = () => {
   const quickLinks = [
     { name: "About Us", href: "/about-us" },
     { name: "Our Services", href: "/services" },
+    { name: "Blogs", href: "/" },
+
     { name: "Contact Us", href: "/contact-us" },
   ];
 
@@ -26,12 +28,11 @@ const Footer = () => {
     { name: "Schizophrenia", href: "/schizophrenia" },
     { name: "Stress & anxity", href: "/stress-anxiety" },
     { name: "Bipolar Disorder", href: "/bipolar-disorder" },
-    { name: "ADHD", href: "/ADHD" },
+    { name: "Attention deficit hyperactivity disorder (ADHD)", href: "/ADHD" },
   ];
 
   const socialLinks = [
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Instagram, href: "#", label: "Instagram" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
   ];
@@ -183,7 +184,7 @@ const Footer = () => {
                 target="_blank"
                 className="hover:text-white transition"
               >
-                designed by{" "}
+                Designed by{" "}
                 <span className="text-green-400">RCM Expert Consultants</span>
               </Link>
             </div>

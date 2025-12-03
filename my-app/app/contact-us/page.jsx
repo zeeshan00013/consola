@@ -71,6 +71,15 @@ const Contact = () => {
             visit our modern facility equipped with the latest medical
             technology.
           </p>
+          <motion.button
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className=" bg-[#376941] mt-6 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Book Appointment
+          </motion.button>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -112,18 +121,15 @@ const Contact = () => {
           >
             {/* Map Placeholder */}
             <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center medical-shadow">
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-emerald-600 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Interactive Map
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  123 Healthcare Avenue, Medical District
-                </p>
-                <button className="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors">
-                  Get Directions
-                </button>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.2654274154975!2d-76.8107683252647!3d39.372868518511574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8181498b86f5f%3A0x5cfcbebf39069d82!2s9331%20Liberty%20Rd%2C%20Randallstown%2C%20MD%2021133%2C%20USA!5e0!3m2!1sen!2s!4v1764742174982!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </motion.div>
         </div>

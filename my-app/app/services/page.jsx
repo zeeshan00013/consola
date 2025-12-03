@@ -15,12 +15,31 @@ const Services = () => {
       title: "Bipolar Disorder",
       route: "/bipolar-disorder",
     },
-    { img: medication, title: "ADHD", route: "/ADHD" },
+    {
+      img: medication,
+      title: "Attention deficit hyperactivity disorder (ADHD)",
+      route: "/ADHD",
+    },
     { img: depress, title: "Depression", route: "/depression" },
     { img: online, title: "Schizophrenia", route: "/schizophrenia" },
     {
       img: stress,
-      title: "Stress & Anxiety",
+      title: " Anxiety",
+      route: "/stress-anxiety",
+    },
+    {
+      img: stress,
+      title: " Obsessive Compulsive Disorder (OCD)",
+      route: "/stress-anxiety",
+    },
+    {
+      img: stress,
+      title: " Post Traumatic Stress Disorder (PTSD)",
+      route: "/stress-anxiety",
+    },
+    {
+      img: stress,
+      title: " Psychosis",
       route: "/stress-anxiety",
     },
   ];
