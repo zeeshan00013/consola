@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Menu, X, Phone, Mail, MapPin, Heart } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../Images/Logo Consola.png";
+import logo from "../Images/Logo-header.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
     { name: "About", href: "/about-us" },
 
     { name: "Services", href: "/services" },
-    { name: "Contact", href: "/contact-us" },
+    { name: "Contact Us", href: "/contact-us" },
   ];
 
   return (

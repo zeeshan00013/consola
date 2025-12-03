@@ -53,7 +53,7 @@ const Footer = () => {
                 <Image
                   src={logo}
                   alt="consola mental health "
-                  width={100}
+                  width={110}
                   height={100}
                 />
               </div>

@@ -1,6 +1,7 @@
 import About from "./components/About.jsx";
 import HomePage from "./components/Home.jsx";
-import GoogleMapComponent from "./components/map.jsx";
+import Insuranace from "./components/Insuranace.jsx";
+import LocationHours from "./components/map.jsx";
 import Service from "./components/Services.jsx";
 import Testimonials from "./components/Testimonials.jsx";
 import WhyChooseUs from "./components/WhyChooseUs.jsx";
@@ -13,7 +14,8 @@ export default function Home() {
       <Service />
       <WhyChooseUs />
       <Testimonials />
-      <GoogleMapComponent />
+      <Insuranace />
+      <LocationHours />
     </div>
   );
 }
