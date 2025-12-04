@@ -7,41 +7,45 @@ import medication from "../Images/hyperactivity.jpg";
 import depress from "../Images/depressed.jpg";
 import online from "../Images/Schizophrenia.jpg";
 import stress from "../Images/stress.jpg";
+import ptsd from "../Images/ptsd.webp";
+import ocd from "../Images/ocd.jpg";
+import Psychosis from "../Images/psychosis.jpg";
 
 const Services = () => {
   const Services = [
-    {
-      img: couple,
-      title: "Bipolar Disorder",
-      route: "/bipolar-disorder",
-    },
-    {
-      img: medication,
-      title: "Attention deficit hyperactivity disorder (ADHD)",
-      route: "/ADHD",
-    },
     { img: depress, title: "Depression", route: "/depression" },
-    { img: online, title: "Schizophrenia", route: "/schizophrenia" },
+
     {
       img: stress,
       title: " Anxiety",
       route: "/stress-anxiety",
     },
     {
-      img: stress,
-      title: " Obsessive Compulsive Disorder (OCD)",
-      route: "/stress-anxiety",
+      img: medication,
+      title: "Attention deficit hyperactivity disorder (ADHD)",
+      route: "/ADHD",
     },
     {
-      img: stress,
+      img: ptsd,
       title: " Post Traumatic Stress Disorder (PTSD)",
       route: "/stress-anxiety",
     },
     {
-      img: stress,
+      img: ocd,
+      title: " Obsessive Compulsive Disorder (OCD)",
+      route: "/stress-anxiety",
+    },
+    {
+      img: couple,
+      title: "Bipolar Disorder",
+      route: "/bipolar-disorder",
+    },
+    {
+      img: Psychosis,
       title: " Psychosis",
       route: "/stress-anxiety",
     },
+    { img: online, title: "Schizophrenia", route: "/schizophrenia" },
   ];
 
   return (

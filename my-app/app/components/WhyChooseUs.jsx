@@ -54,10 +54,10 @@ export default function WhyChooseUs() {
                 <Eye className="" /> Our Vision
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                To arise to the occasion culturally competent, holistic,
-                wellness when giving patient care. Fostering and sustaining a
-                professional environment that attracts and retains the best of
-                the best providers in the profession.
+                Consola is committed to delivering culturally competent,
+                holistic, and wellness-focused patient care. We strive to foster
+                and maintain a professional environment that attracts and
+                retains the highest-quality providers in the field.
               </p>
             </div>
 

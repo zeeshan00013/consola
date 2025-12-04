@@ -7,11 +7,12 @@ import family from "../Images/bipolar.jpg";
 import medication from "../Images/Schizophrenia.jpg";
 import adhd from "../Images/hyperactivity.jpg";
 import anxiety from "../Images/stress.jpg";
+import ocd from "../Images/ocd.jpg";
+import psychosis from "../Images/psychosis.jpg";
+import pts from "../Images/ptsd.webp";
 
 const Services = [
   { img: individual, title: "Depression", route: "/depression" },
-  { img: family, title: "Bipolar Disorder", route: "/bipolar-disorder" },
-  { img: medication, title: "Schizophrenia", route: "/schizophrenia" },
   { img: anxiety, title: "Anxiety", route: "/stress-anxiety" },
   {
     img: adhd,
@@ -19,17 +20,21 @@ const Services = [
     route: "/ADHD",
   },
   {
-    img: medication,
+    img: pts,
     title: "Post Traumatic Stress Disorder (PTSD)",
     route: "/ADHD",
   },
-  { img: family, title: "Obsessive Compulsive Disorder (OCD)", route: "/ADHD" },
-  { img: family, title: "Psychosis", route: "/ADHD" },
+  { img: ocd, title: "Obsessive Compulsive Disorder (OCD)", route: "/ADHD" },
+
+  { img: family, title: "Bipolar Disorder", route: "/bipolar-disorder" },
+  { img: psychosis, title: "Psychosis", route: "/ADHD" },
+
+  { img: medication, title: "Schizophrenia", route: "/schizophrenia" },
 ];
 
 export default function Service() {
   return (
-    <section className="py-16 bg-white text-center">
+    <section className="py-16 bg-white text-center max-w-6xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
         Conditions We Treat
       </h2>
