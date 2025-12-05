@@ -1,31 +1,13 @@
 // app/sitemap.xml/route.js
 export async function GET() {
-  const baseUrl = "https://www.rcmexpertc.com";
+  const baseUrl = "https://www.consolamentalhealth.com";
   const staticRoutes = [
     "",
-    "about",
-    "contact",
-    "faqs",
-    "HipaaCompliance",
-    "EHRSoftware",
-    "privacy",
-    "payment-posting",
-    "patient-statements",
-    "mental-health-billing",
-    "medical-group-practice",
-    "medical-coding",
-    "medical-biling",
-    "internal-medicine-billing",
-    "insurance-eligibility",
-    "independent-practices",
-    "hospitals",
-    "healthcare-digital-marketing",
-    "faqs",
-    "denial-management",
-    "credentialing-services",
-    "bookkeeping",
-    "ar-follow-up",
-    "ambulatory-surgery",
+    "about-us",
+    "contact-us",
+    "bipolar-disorder",
+    "depression",
+    "ADHD",
   ];
 
   const routes = [...staticRoutes];

@@ -3,7 +3,7 @@ export async function GET() {
   const body = `User-agent: *
 Allow: /
 
-Sitemap: https://www.rcmexpertc.com/sitemap.xml
+Sitemap: https://www.consolamentalhealth.com/sitemap.xml
 `;
 
   return new Response(body, {
