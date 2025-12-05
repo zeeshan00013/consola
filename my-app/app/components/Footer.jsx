@@ -61,8 +61,8 @@ const Footer = () => {
             </div>
 
             <p className="text-gray-300 leading-relaxed">
-              Providing exceptional healthcare services for over 25 years. Your
-              health and well-being are our top priorities.
+              Providing exceptional mental health services. Your health and
+              wellbeing are our top priorities.
             </p>
           </motion.div>
 
