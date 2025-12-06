@@ -20,8 +20,8 @@ export default function WhyChooseUs() {
           <div className="absolute bottom-0 left-0 w-full bg-[#376941] text-white text-center py-6 rounded-b-2xl">
             <h2 className="text-4xl font-bold">09</h2>
             <p className="mt-2 text-sm px-4">
-              Consola Mental Health has 9 years of professional experience
-              providing mental health care across Texas.
+              Consola mental health has professional experience providing mental
+              health services across Maryland
             </p>
           </div>
         </div>
