@@ -56,7 +56,7 @@ export default function LocationHours() {
             Find Us
           </h2>
           <p className="text-gray-100 mb-4">
-            1506 W Pioneer Pkwy, Suite #103 B Arlington, TX 76013
+            9331 Liberty Rd Randallstown Md 21133
           </p>
           <div className="w-full h-64 md:h-72 rounded-lg overflow-hidden shadow">
             <iframe

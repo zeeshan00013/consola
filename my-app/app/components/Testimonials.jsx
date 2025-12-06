@@ -1,106 +1,84 @@
 "use client";
 import { useState } from "react";
+import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import img from "../Images/google.png";
 import Image from "next/image";
-import googleLogo from "../Images/google.png";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export default function Testimonials() {
-  const testimonials = [
-    {
-      text: "Consola Mental Health has truly changed my life. They are compassionate, understanding, and incredibly skilled at what they do. I’ve gained confidence and coping strategies that have made a real difference in my daily life. Highly recommend!",
-      name: "Emily R.",
-    },
-    {
-      text: "From the moment I reached out, I felt heard and supported. The team at Consola Mental Health made the process so easy, and my provider has been a guiding light in my healing journey. I finally feel like I’m on the right path.",
-      name: "James L.",
-    },
-    {
-      text: "Amazing service and professional staff. I felt comfortable from day one and got the support I needed. Truly grateful!",
-      name: "Sophia M.",
-    },
-    {
-      text: "I never thought therapy could be so approachable and supportive. Consola Mental Health helped me overcome anxiety and build confidence in myself.",
-      name: "Michael T.",
-    },
-    {
-      text: "Highly professional and compassionate therapists. Every session has helped me gain clarity and progress in my personal growth journey.",
-      name: "Olivia K.",
-    },
-    {
-      text: "The team at Consola is amazing! They genuinely care and provide personalized guidance. I finally feel like I am making progress.",
-      name: "Liam B.",
-    },
-  ];
+const testimonials = [
+  {
+    name: "Dr. Sarah Johnson",
+    feedback:
+      "Consola Mental Health has truly changed my life. They are compassionate, understanding, and incredibly skilled at what they do. I’ve gained confidence and coping strategies that have made a real difference in my daily life. Highly recommend!",
+    image: img,
+  },
+  {
+    name: "Dr. Michael Lee",
+    feedback:
+      "Amazing service and professional staff. I felt comfortable from day one and got the support I needed. Truly grateful!",
 
+    image: img,
+  },
+  {
+    name: "Emily Davis",
+    feedback:
+      "I never thought therapy could be so approachable and supportive. Consola Mental Health helped me overcome anxiety and build confidence in myself.",
+
+    image: img,
+  },
+];
+
+export default function Testimonial() {
   const [current, setCurrent] = useState(0);
 
   const prevSlide = () => {
-    setCurrent(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
-    );
+    setCurrent((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
   };
 
   const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % testimonials.length);
+    setCurrent((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
   };
 
   return (
-    <section className="bg-[#4e7e50] py-16 mb-10 flex items-center justify-center">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 gap-10 flex flex-col  items-center">
-        {/* Left Text Section */}
-        <div className=" text-white space-y-3 mb-8 lg:mb-0 ">
-          <p className="text-sm font-medium">Feedback</p>
-          <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-            What Our Patients Say
-          </h2>
-        </div>
+    <section className="bg-blue-50 py-16 px-6">
+      <div className="max-w-5xl mx-auto text-center">
+        {/* Heading */}
+        <h2 className="text-3xl font-medium  text-center text-zinc-900 mb-4">
+          What Our Clients Say
+        </h2>
 
-        {/* Testimonial Slider */}
-        <div className="lg:col-span-2 relative w-full">
-          {/* Testimonial Card */}
-          <div className="overflow-hidden">
-            <div
-              className="flex transition-transform duration-700"
-              style={{ transform: `translateX(-${current * 100}%)` }}
-            >
-              {testimonials.map((t, index) => (
-                <div key={index} className="min-w-full px-4">
-                  <div className="bg-white shadow-md p-6 flex flex-col justify-center items-center h-[200px] sm:h-[200px] rounded-lg">
-                    <p className="text-gray-700 text-sm mb-4 leading-relaxed text-center">
-                      {t.text}
-                    </p>
-                    <div className="flex items-center gap-2 mt-4 mb-4">
-                      <Image
-                        src={googleLogo}
-                        alt="Google"
-                        width={40}
-                        height={40}
-                      />
-                      <span className="font-semibold text-gray-900">
-                        {t.name}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ))}
+        {/* Testimonial Card */}
+        <div className="relative bg-white shadow-lg rounded-2xl p-8 md:p-12 max-w-3xl mx-auto">
+          <FaQuoteLeft className="text-green-300 text-3xl mb-4 mx-auto" />
+          <p className="text-gray-700 italic mb-6">
+            {testimonials[current].feedback}
+          </p>
+          <div className="flex items-center justify-center space-x-4">
+            <Image
+              src={testimonials[current].image}
+              alt={testimonials[current].name}
+              className="w-12 h-12 rounded-full object-cover border-2 border-[#154d32]"
+            />
+            <div className="text-left">
+              <h4 className="text-lg font-bold text-green-700">
+                {testimonials[current].name}
+              </h4>
             </div>
           </div>
 
-          {/* Navigation Buttons */}
-          <div className="absolute inset-x-0 flex justify-between items-center px-4 sm:justify-center sm:gap-4 bottom-0 sm:bottom-4">
+          {/* Navigation Arrows */}
+        </div>
+
+        {/* Dots Indicator */}
+        <div className="flex justify-center mt-6 space-x-2">
+          {testimonials.map((_, index) => (
             <button
-              onClick={prevSlide}
-              className="bg-[#4e7e50] text-white p-2 rounded-full shadow-md hover:bg-gray-700"
-            >
-              <ChevronLeft size={20} />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="bg-[#4e7e50] text-white p-2 rounded-full shadow-md hover:bg-gray-700"
-            >
-              <ChevronRight size={20} />
-            </button>
-          </div>
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full cursor-pointer ${
+                current === index ? "bg-[#36025d]" : "bg-gray-300"
+              }`}
+            ></button>
+          ))}
         </div>
       </div>
     </section>

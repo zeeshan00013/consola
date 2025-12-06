@@ -24,7 +24,7 @@ const Header = () => {
       {/* Top Bar */}
       <div className="bg-[#4e7e50] text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-6">
+          <div className="flex flex-col md:flex-row  space-x-6">
             <div className="flex items-center">
               <Phone className="w-4 h-4 mr-2" />
               <span>443 739 5882</span>
@@ -34,7 +34,7 @@ const Header = () => {
               <span>info@consolamentalhealth.com</span>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex justify-items-end">
             <MapPin className="w-4 h-4 mr-2" />
             <span>9331 Liberty Rd Randallstown Md 21133</span>
           </div>
