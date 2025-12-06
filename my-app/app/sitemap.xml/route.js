@@ -2,12 +2,11 @@
 export async function GET() {
   const baseUrl = "https://www.consolamentalhealth.com";
   const staticRoutes = [
-    "",
     "about-us",
     "contact-us",
     "bipolar-disorder",
     "depression",
-    "ADHD",
+    "adhd",
   ];
 
   const routes = [...staticRoutes];

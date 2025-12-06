@@ -23,7 +23,7 @@ const Services = () => {
     {
       img: medication,
       title: "Attention deficit hyperactivity disorder (ADHD)",
-      route: "/ADHD",
+      route: "/adhd",
     },
     {
       img: ptsd,
